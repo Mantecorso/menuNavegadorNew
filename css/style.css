@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/pexels-eberhard-grossgasteiger-691668.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.navegador {
+    width: 100%;
+    height: 70px;
+    background: #1e1e1e;
+    color: antiquewhite;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.logo img {
+    width: 50px;
+    background: rgb(25, 170, 214);
+    border-radius: 5px;
+}
+
+.burguer {
+    display: none;
+}
+
+.enlaces {
+    display: flex;
+}
+
+.enlaces ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.enlaces ul li {
+    list-style: none;
+    text-align: center;
+    width: 100px;
+    padding: 5px;
+}
+
+.enlaces ul li a {
+    text-decoration: none;
+    color: turquoise;
+    font-size: 1.3rem;
+}
+
+.enlaces ul li:hover {
+    background-color: #535050;
+}
+
+.globalt {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #1e1e1e;
+}
+
+.globalt h2 {
+    font-size: 6rem;
+    text-shadow: 1px 1px 1px white;
+}
+
+.globi {
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.dos2 {
+    background-image: url(../images/pexels-public-domain-pictures-87769.jpg);
+}
+
+.tres3 {
+    background-image: url(../images/pexels-mathias-pr-reding-9581519.jpg);
+}
+
+@media (max-width:767px) {
+    
+    .globalt h2 {
+        font-size: 4rem;
+    }
+
+}
