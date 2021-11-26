@@ -64,6 +64,60 @@ main {
     background-color: #535050;
 }
 
+.burguer {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    background: #1e1e1e;
+    box-shadow: 0 10px 20px rgba(0,0,0,.08);
+    border-radius: 10px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.burguer span {
+    position: absolute;
+    width: 40px;
+    height: 4px;
+    background: #1863ff;
+    border-radius: 4px;
+    transition: .5s;
+}
+
+.burguer span:nth-child(1) {
+    transform: translateY(-15px);
+    width: 25px;
+    left: 5px;
+}
+
+.burguer span:nth-child(2) {
+    transform: translateY(15px);
+    width: 15px;
+    left: 15px;
+}
+
+.burguer.active span:nth-child(1) {
+    width: 40px;
+    transform: translateY(0px) rotate(45deg);
+    transition-delay: .125s;
+}
+
+.burguer.active span:nth-child(2) {
+    width: 40px;
+    transform: translateY(0px) rotate(315deg);
+    transition-delay: .25s;
+    left: 5px;
+}
+
+.burguer.active span:nth-child(3) {
+    transform: translateX(60px);
+}
+
 .globalt {
     width: 100%;
     height: 50vh;
@@ -95,6 +149,10 @@ main {
 }
 
 @media (max-width:767px) {
+
+    .burguer {
+        display: flex;
+    }
     
     .globalt h2 {
         font-size: 4rem;
