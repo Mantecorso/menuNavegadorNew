@@ -12,8 +12,40 @@ html {
 
 .gordo {
     width: 100%;
+    height: 100vh;
     position: relative;
     overflow: hidden;
+}
+
+i {
+    position: absolute;
+    height: 200px;
+    background: linear-gradient(transparent, #fff);
+    /* z-index: 666; */
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    animation: lluvia 5s linear infinite;
+}
+
+i:nth-child(3n+1) {
+    background: linear-gradient(transparent, rgb(24, 43, 43));
+}
+
+i:nth-child(3n+2) {
+    background: linear-gradient(transparent, rgb(30, 61, 30));
+}
+
+i:nth-child(3n+3) {
+    background: linear-gradient(transparent, rgb(83, 83, 34));
+}
+
+@keyframes lluvia {
+    0% {
+        transform: translateY(-200px);
+    }
+    100% {
+        transform: translateY(calc(100vh + 200px));
+    }
 }
 
 main {
